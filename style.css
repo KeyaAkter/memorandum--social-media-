@@ -264,3 +264,79 @@ main .container .left .profile {
   background-position: center;
   background-size: cover;
 }
+/* ==============Create Post============== */
+.middle .create-post {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-bg-2);
+  margin-top: 1.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: var(--card-border-radius);
+}
+.middle .create-post input[type="text"] {
+  font-family: inherit;
+  background-color: transparent;
+  justify-content: flex-start;
+  width: 100%;
+  margin-right: 1rem;
+  padding: 1rem;
+  color: var(--color-muted);
+  font-size: 1.15rem;
+}
+/* =================NEWS FEED================= */
+.middle .feeds .feed {
+  background-color: var(--color-bg-2);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  margin: 1rem 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+.middle .feed .head {
+  display: flex;
+  justify-content: space-between;
+}
+.feed .head .edit {
+  font-size: 1.5rem;
+}
+.middle .feed .user {
+  display: flex;
+  gap: 1rem;
+}
+.feed .feed-photo {
+  margin: 1rem 0;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--card-border-radius);
+}
+.feed .action-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 0.6rem;
+}
+
+.feed .liked {
+  display: flex;
+}
+.feed .liked span {
+  width: 1.5rem;
+  aspect-ratio: 1/1;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--color-muted);
+  margin-left: -0.7rem;
+}
+.feed .liked span:first-child {
+  margin: 0;
+}
+.feed .liked p {
+  margin-left: 0.5rem;
+}
+.feed .caption .hastag {
+  color: var(--color-primary);
+}
