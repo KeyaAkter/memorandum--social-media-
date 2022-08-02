@@ -346,6 +346,7 @@ main .container .left .profile {
   position: sticky;
   top: var(--sticky-top-right);
 }
+/* =====================MESSAGES===================== */
 .right .messages {
   background-color: var(--color-bg-2);
   padding: var(--card-padding);
@@ -382,4 +383,64 @@ main .container .left .profile {
 }
 .right .messages .category .msg-rqst {
   color: var(--color-secondary);
+}
+/* ==========FOR EVERY SINGLE MESSAGE========= */
+.right .messages .msg {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+}
+.right .messages .msg:last-child {
+  margin: 0;
+}
+.right .messages .msg p {
+  font-size: 0.8rem;
+}
+.messages .msg .profile-photo {
+  position: relative;
+  overflow: visible;
+}
+.msg .profile-photo img {
+  border-radius: 50%;
+}
+.msg .profile-photo .active {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0.8rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--color-success);
+  border: 3px solid var(--color-bg-2);
+}
+.msg .msg-body .seen {
+  color: var(--color-muted);
+}
+.msg .msg-body .unseen {
+  font-weight: 600;
+  color: var(--color-unseen);
+}
+/* ==========FOR EVERY SINGLE REQUEST========= */
+.right .frnd-rqst {
+  margin-top: 1rem;
+}
+.right .frnd-rqst h4 {
+  color: var(--color-muted);
+  margin: 1rem 0;
+}
+.right .rqst {
+  background-color: var(--color-bg-2);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  margin-bottom: 0.8rem;
+}
+.right .rqst .info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.right .rqst .action {
+  display: flex;
+  gap: 1rem;
 }
